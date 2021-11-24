@@ -1,0 +1,11 @@
+<div class="div">
+<h1>This is all the Restaurants!</h1>
+</div>
+
+<div class="div">
+<ol>
+<%@restaurants.each do |restaurant| %>
+<li><%=link_to restaurant.name, restaurant %></li>
+<% end %>
+</ol>
+</div>

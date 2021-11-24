@@ -1,0 +1,21 @@
+<div class="div">
+<h1><%= @restaurant.name %></h1>
+
+<p>
+<strong>Address:</strong>
+<%= @restaurant.address %>
+</p>
+
+<p>
+<%= @restaurant.phone_number %>
+</p>
+
+<p>
+<%= @restaurant.category %>
+</p>
+
+<%# <p>
+<%= @restaurant.review %>
+<%# </p> %>
+<%= link_to "Leave Review", new_restaurant_review_path(@restaurant), class: "btn btn-primary"%>
+</div>

@@ -1,0 +1,8 @@
+
+<div class="div">
+<h1>Please leave your review here!</h1>
+<%= form_for [ @restaurant, @review ] do |f| %>
+  <%= f.input :content %>
+  <%= f.submit "Submit review", class: "btn btn-primary" %>
+<% end %>
+</div>
